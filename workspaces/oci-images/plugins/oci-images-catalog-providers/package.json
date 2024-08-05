@@ -1,6 +1,6 @@
 {
-  "name": "@backstage-community/plugin-oci-images-catalog-entity-provider-node",
-  "description": "Node.js library for the oci-images-catalog-entity-provider plugin",
+  "name": "@backstage-community/plugin-oci-images-catalog-providers",
+  "description": "Catalog providers for ingesting OCI images",
   "version": "0.1.0",
   "main": "src/index.ts",
   "types": "src/index.ts",

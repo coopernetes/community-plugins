@@ -5,12 +5,12 @@ import {
 import { createRouter } from './service/router';
 
 /**
- * ociImagesBackendPlugin backend plugin
+ * ociImagesPlugin backend plugin
  *
  * @public
  */
-export const ociImagesBackendPlugin = createBackendPlugin({
-  pluginId: 'oci-images-backend',
+export const ociImagesPlugin = createBackendPlugin({
+  pluginId: 'oci-images',
   register(env) {
     env.registerInit({
       deps: {

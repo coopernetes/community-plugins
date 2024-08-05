@@ -1,6 +1,6 @@
 /***/
 /**
- * Node.js library for the oci-images-catalog-entity-provider plugin.
+ * Node.js library for the oci-images-catalog-providers plugin.
  *
  * @packageDocumentation
  */

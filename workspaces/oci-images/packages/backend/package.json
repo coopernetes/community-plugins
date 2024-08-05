@@ -16,6 +16,8 @@
     "build-image": "docker build ../.. -f Dockerfile --tag backstage"
   },
   "dependencies": {
+    "@backstage-community/plugin-oci-images-backend": "^0.1.0",
+    "@backstage-community/plugin-oci-images-catalog-providers": "^0.1.0",
     "@backstage/backend-common": "^0.23.3",
     "@backstage/backend-defaults": "^0.4.0",
     "@backstage/backend-tasks": "^0.5.27",

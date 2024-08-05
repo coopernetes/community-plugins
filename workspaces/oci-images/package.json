@@ -18,7 +18,13 @@
     "lint": "backstage-cli repo lint --since origin/main",
     "lint:all": "backstage-cli repo lint",
     "prettier:check": "prettier --check .",
-    "new": "backstage-cli new --scope @backstage-community"
+    "new": "backstage-cli new --scope @backstage-community",
+    "dev": "concurrently \"yarn start\" \"yarn start-backend\"",
+    "start": "yarn workspace app start",
+    "start-backend": "yarn workspace backend start",
+    "build:backend": "yarn workspace backend build",
+    "build-image": "yarn workspace backend build-image",
+    "test:e2e": "playwright test"
   },
   "workspaces": {
     "packages": [
@@ -36,7 +42,10 @@
     "@backstage/e2e-test-utils": "^0.1.1",
     "@backstage/repo-tools": "^0.8.0",
     "@changesets/cli": "^2.27.1",
+    "@playwright/test": "^1.32.3",
     "@spotify/prettier-config": "^12.0.0",
+    "concurrently": "^8.0.0",
+    "lerna": "^7.3.0",
     "node-gyp": "^9.0.0",
     "prettier": "^2.3.2",
     "typescript": "~5.3.0"

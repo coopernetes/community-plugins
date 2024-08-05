@@ -1,2 +1,2 @@
 export * from './service/router';
-export { ociImagesBackendPlugin as default } from './plugin';
+export { ociImagesPlugin as default } from './plugin';
