@@ -78,6 +78,20 @@ catalog:
   rules:
     - allow: [Component, System, API, Resource, Location]
   locations:
+    ## oci-image catalog configurations
+    - type: oci
+      target: quay.io/backstage
+      rules: 
+        - allow: [Resource]
+    - type: oci-image
+      target: docker.io/library/nginx
+      rules:
+        - allow: [Resource]
+    - type: oci:artifactory
+      target: jfrog.example.com/artifactory/docker-local
+      rules:
+        - allow: [Resource]
+
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: file
       target: ../../examples/entities.yaml
